@@ -5,6 +5,9 @@ const template = () => {
   <img src="./icons/BBlogo.png"/>
     <nav>
       <ul>
+      <li>
+          <a href="null" class="home">Home</a>
+        </li>
         <li>
           <a href="null" class="about">About</a>
         </li>

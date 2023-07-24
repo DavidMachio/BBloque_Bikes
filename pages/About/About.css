@@ -1,0 +1,23 @@
+.divabout {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cover {
+  width: 50%;
+  height: 80vh;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.text {
+  margin: 60px;
+  padding: 30px;
+  width: 600px;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  padding: 10px 0;
+}

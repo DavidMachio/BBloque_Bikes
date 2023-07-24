@@ -8,17 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: rgb(21, 21, 21);
-}
-
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
-}
-
-main {
-  min-height: 80vh;
 }

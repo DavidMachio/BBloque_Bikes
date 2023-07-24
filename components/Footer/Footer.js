@@ -2,10 +2,8 @@ import "./Footer.css";
 
 const template = () => {
   return `
-  <p>© Bbloque Cycles</p>
   
 <nav>
-  <p>FollowUs</p> 
   <ul>
     <li>
       <a href="null" target="_blank">

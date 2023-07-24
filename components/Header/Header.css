@@ -1,18 +1,13 @@
 header {
-  background: rgb(232, 154, 33);
-  background: linear-gradient(
-    0deg,
-    rgb(242, 174, 72) 1%,
-    rgba(255, 230, 0, 1) 100%
-  );
+  color: black;
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding: 20px;
 }
 header img {
-  padding: 0 20px;
   height: 40px;
 }
 
@@ -22,8 +17,19 @@ header ul {
   align-items: center;
 }
 header li {
+  text-transform: uppercase;
   padding: 10px;
 }
 a {
-  color: white;
+  color: black;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 630px) {
+  header nav {
+    display: none;
+  }
 }
