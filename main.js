@@ -8,4 +8,4 @@ import Home from "./pages/Home/Home";
 Header();
 Footer();
 About();
-Home();
+//Home();

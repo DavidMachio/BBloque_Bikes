@@ -10,7 +10,7 @@ const template = () => {
   </div>
   <img src="./images/pablo1.jpg" class="cover"/>
   </div>
-  <div class="divhome">
+  <div class="divabout">
   <img src="./images/medidas.jpg" class="cover"/>
   <div class="text">
   <h1>Proceso</h1>

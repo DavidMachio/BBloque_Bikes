@@ -1,17 +1,18 @@
 header {
+  background-color: blanchedalmond;
   color: black;
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
   padding: 20px;
 }
-header img {
-  height: 40px;
+.logo {
+  max-height: 200px;
+  background: transparent;
 }
 
-header ul {
+.ulheader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +21,7 @@ header li {
   text-transform: uppercase;
   padding: 10px;
 }
-a {
+header a {
   color: black;
 }
 
@@ -28,8 +29,44 @@ header a:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 630px) {
-  header nav {
-    display: none;
+.abrir,
+.cerrar {
+  display: none;
+}
+@media screen and (max-width: 690px) {
+  .abrir,
+  .cerrar {
+    background: none;
+    border: none;
+    display: block;
+  }
+  .navheader {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(57, 57, 57);
+    padding: 20px;
+    box-shadow: 0 0 0 100vmax rgba(108, 108, 108, 0.5);
+  }
+  .navheader.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .ulheader {
+    flex-direction: column;
+    align-items: end;
+  }
+  .ulheader a {
+    color: whitesmoke;
+  }
+  .cerrar {
+    margin-right: 10px;
   }
 }
