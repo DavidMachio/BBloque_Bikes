@@ -1,5 +1,5 @@
 header {
-  background-color: blanchedalmond;
+  background-color: whitesmoke;
   color: black;
   height: 10vh;
   display: flex;
@@ -39,6 +39,14 @@ header a:hover {
     background: none;
     border: none;
     display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .abrir {
+    color: black;
+  }
+  .cerrar {
+    color: whitesmoke;
   }
   .navheader {
     opacity: 0;
@@ -50,7 +58,7 @@ header a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 60;
     background-color: rgb(57, 57, 57);
     padding: 20px;
     box-shadow: 0 0 0 100vmax rgba(108, 108, 108, 0.5);
@@ -65,8 +73,5 @@ header a:hover {
   }
   .ulheader a {
     color: whitesmoke;
-  }
-  .cerrar {
-    margin-right: 10px;
   }
 }

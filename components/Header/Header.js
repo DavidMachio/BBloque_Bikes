@@ -3,9 +3,9 @@ import "./Header.css";
 const template = () => {
   return `
   <img class="logo" src="./icons/bbloqueletras.png"/>
-  <button class="abrir" id="abrir"><img src="./icons/burguer.svg"/></button>
+  <button class="abrir" id="abrir"><i class="bi bi-list"></i></button>
     <nav class="navheader" id="navheader">
-      <button class="cerrar" id="cerrar">Cerrar</button>
+      <button class="cerrar" id="cerrar"><i class="bi bi-x"></i></button>
         <ul class="ulheader">
           <li><a href="null" class="home">Inicio</a></li>
           <li><a href="null" class="about">Sobre BBloque</a></li>
