@@ -10,8 +10,6 @@ Header();
 Footer();
 Home();
 
-document.querySelector("#home-link2").addEventListener("click", Home);
-
 document.querySelector("#about-link").addEventListener("click", () => {
   About();
   const navheader = document.querySelector("#navheader");
@@ -31,4 +29,7 @@ document.querySelector("#home-link2").addEventListener("click", () => {
   Home();
   const navheader = document.querySelector("#navheader");
   navheader.classList.remove("visible");
+});
+document.querySelector("#theme-btn").addEventListener("click", () => {
+  document.body.classList.toggle("dark");
 });
