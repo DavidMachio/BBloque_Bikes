@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:5173/#null -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module" src="./BBloque Bikes_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/iconoweb.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBloque Bikes</title>
+    <link rel="stylesheet" href="./BBloque Bikes_files/bootstrap-icons.css">
+  <style type="text/css" data-vite-dev-id="/Users/davidmachio/Desktop/DESARROLLO WEB/Proyecto BBloque/BBloque/style.css">:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --primary-light: #101010;
+  --bg-light: #dedede;
+  --primary-dark: #dedede;
+  --bg-dark: #000d38;
+  --decoration: #df8632;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--primary-light);
+  background-color: var(--bg-light);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--bg-light);
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+footer {
+  background-color: var(--bg-light);
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+main {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/davidmachio/Desktop/DESARROLLO WEB/Proyecto BBloque/BBloque/components/Header/Header.css">header {
+  background-color: whitesmoke;
+  color: black;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  width: 150px;
+  height: 25px;
+  background: transparent;
+  object-fit: cover;
+}
+
+.ulheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header li {
+  text-transform: uppercase;
+  padding: 20px;
+}
+header a {
+  color: black;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header li:hover {
+  background-color: var(--decoration);
+}
+
+.abrir,
+.cerrar {
+  display: none;
+}
+@media screen and (max-width: 790px) {
+  .abrir,
+  .cerrar {
+    background: none;
+    border: none;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .abrir {
+    color: black;
+  }
+  .cerrar {
+    color: whitesmoke;
+  }
+  .cerrar:hover {
+    transform: scale(1.3);
+  }
+  .abrir:hover {
+    transform: scale(1.1);
+  }
+  .navheader {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: right;
+    gap: 20px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 10;
+    background-color: var(--primary-light);
+    padding: 0px;
+    box-shadow: 0 0 0 100vmax rgba(108, 108, 108, 0.5);
+  }
+  .navheader.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .ulheader {
+    flex-direction: column;
+    align-items: end;
+  }
+  .ulheader a {
+    color: whitesmoke;
+  }
+  .ulheader li {
+    width: 100%;
+  }
+  .ulheader :hover {
+    text-decoration: none;
+    background-color: rgb(62, 62, 62);
+  }
+}
+</style><style type="text/css" data-vite-dev-id="/Users/davidmachio/Desktop/DESARROLLO WEB/Proyecto BBloque/BBloque/components/Footer/Footer.css">footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+}
+.icon {
+  height: 30px;
+  width: auto;
+  padding: 0 10px;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/davidmachio/Desktop/DESARROLLO WEB/Proyecto BBloque/BBloque/pages/About/About.css">.divabout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: auto;
+  min-height: 80vh;
+}
+.textabout {
+  text-align: justify;
+  max-width: 600px;
+  min-width: 350px;
+  padding: 0 30px 0 30px;
+}
+.coverabout {
+  max-width: 60%;
+  min-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.h1about {
+  text-transform: uppercase;
+  font-size: 60px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .divabout {
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .textabout {
+    max-width: 60%;
+  }
+  .h1about {
+    text-align: center;
+  }
+  .coverabout {
+    margin-bottom: 50px;
+    border-radius: 0 0 150px 150px;
+  }
+  .center {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="/Users/davidmachio/Desktop/DESARROLLO WEB/Proyecto BBloque/BBloque/pages/Home/Home.css">.coverhome {
+  width: 100%;
+  height: 80vh;
+  padding: 0;
+  object-fit: cover;
+}
+.divhome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.titlehome {
+  filter: invert(100%);
+  width: 70%;
+  height: 100px;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+
+@keyframes opacy {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scale {
+  from {
+    width: 75%;
+  }
+  to {
+    width: 70%;
+  }
+}
+.titlehome {
+  animation: opacy 4s, scale 5s;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/davidmachio/Desktop/DESARROLLO WEB/Proyecto BBloque/BBloque/pages/Trabajos/Trabajos.css">#trabajos-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+#trabajos-container img {
+  margin-bottom: 5px;
+  width: 100%;
+  min-width: 380px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+#trabajos-container h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#trabajos-container h4 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+#trabajos-container h5 {
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 790px) {
+  #trabajos-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+</style></head>
+  <body>
+    <header>
+  <a href="http://localhost:5173/#null" id="home-link" class="home"><img class="logo" src="./BBloque Bikes_files/bbloqueletras.png"></a>
+  <button class="abrir" id="abrir"><i class="bi bi-list"></i></button>
+    <nav class="navheader visible" id="navheader">
+      <button class="cerrar" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="ulheader">
+          <li><a href="http://localhost:5173/#null" id="home-link2" class="home">Inicio</a></li>
+          <li><a href="http://localhost:5173/#null" id="about-link" class="about">Sobre BBloque</a></li>
+          <li><a href="http://localhost:5173/#null" id="gallery-link" class="gallery">Trabajos</a></li>
+          <li><a href="http://localhost:5173/#null" id="contact-link" class="Contact">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+  <div class="divabout">
+  <div class="textabout">
+  <h1 class="h1about">BBloque</h1>
+  <p>Mi nombre es Pablo y me dedico apasionadamente a construir bicicletas de acero a mano.
+  Mi arte reside en la combinación de la tradición artesanal con la precisión técnica, creando dos ruedas que son obras de arte funcionales, listas para conquistar caminos y senderos.
+  </p></div>
+  <img src="./BBloque Bikes_files/pablo1.jpg" class="coverabout">
+  </div>
+  <div class="divabout center">
+  <img src="./BBloque Bikes_files/medidas.jpg" class="coverabout">
+  <div class="textabout">
+  <h1 class="h1about">Proceso</h1>
+  <p>Desde tomar medidas exactas hasta cortar los tubos de acero con precisión, la elección del acabado y el montaje final, cada etapa del proceso de construcción de una bicicleta se fusiona para dar vida a una obra maestra sobre dos ruedas.
+  </p></div>
+  </div>
+  <div class="divabout">
+  <div class="textabout">
+  <h1 class="h1about">Entrega</h1>
+  <p>Mi nombre es Pablo y me dedico apasionadamente a construir bicicletas de acero a mano.
+  Mi arte reside en la combinación de la tradición artesanal con la precisión técnica, creando dos ruedas que son obras de arte funcionales, listas para conquistar caminos y senderos.
+  </p></div>
+  <img src="./BBloque Bikes_files/bikecover.jpg" class="coverabout">
+  </div>
+    </main>
+    <footer>
+  
+<nav>
+  <ul>
+    <li>
+      <a href="http://localhost:5173/null" target="_blank">
+        <img class="icon" src="./BBloque Bikes_files/facebook.svg">
+      </a>
+    </li>
+      <li>
+      <a href="https://www.instagram.com/bbloque/" target="_blank">
+        <img class="icon" src="./BBloque Bikes_files/instagram.svg">
+      </a>
+    </li>
+    <li>
+      <a href="https://youtu.be/KY_Anuf_VmA" target="_blank">
+        <img class="icon" src="./BBloque Bikes_files/youtube.svg">
+      </a>
+    </li>
+</ul>
+</nav>
+</footer>
+    <script type="module" src="./BBloque Bikes_files/main.js"></script>
+  
+
+</body></html>

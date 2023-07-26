@@ -11,6 +11,24 @@ Footer();
 Home();
 
 document.querySelector("#home-link2").addEventListener("click", Home);
-document.querySelector("#home-link").addEventListener("click", Home);
-document.querySelector("#about-link").addEventListener("click", About);
-document.querySelector("#gallery-link").addEventListener("click", Trabajos);
+
+document.querySelector("#about-link").addEventListener("click", () => {
+  About();
+  const navheader = document.querySelector("#navheader");
+  navheader.classList.remove("visible");
+});
+document.querySelector("#gallery-link").addEventListener("click", () => {
+  Trabajos();
+  const navheader = document.querySelector("#navheader");
+  navheader.classList.remove("visible");
+});
+document.querySelector("#home-link").addEventListener("click", () => {
+  Home();
+  const navheader = document.querySelector("#navheader");
+  navheader.classList.remove("visible");
+});
+document.querySelector("#home-link2").addEventListener("click", () => {
+  Home();
+  const navheader = document.querySelector("#navheader");
+  navheader.classList.remove("visible");
+});

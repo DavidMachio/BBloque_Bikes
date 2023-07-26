@@ -13,10 +13,9 @@
 .titlehome {
   filter: invert(100%);
   width: 70%;
-  height: 200px;
+  height: 100px;
   object-fit: cover;
   position: absolute;
-  z-index: 0;
 }
 
 @keyframes opacy {

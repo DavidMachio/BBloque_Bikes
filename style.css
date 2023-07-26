@@ -5,6 +5,11 @@
   --bg-light: #dedede;
   --primary-dark: #dedede;
   --bg-dark: #000d38;
+  --hover: linear-gradient(
+    0deg,
+    rgba(117, 117, 117, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 * {
