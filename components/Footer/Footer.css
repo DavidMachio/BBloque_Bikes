@@ -12,4 +12,11 @@ footer ul {
   height: 30px;
   width: auto;
   padding: 0 10px;
+  transition: 0.2s;
+}
+.icon:hover {
+  scale: 120%;
+}
+.icon.dark {
+  filter: invert(100%);
 }

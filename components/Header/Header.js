@@ -4,6 +4,7 @@ const template = () => {
   return `
   <a href="#null" id="home-link"><img class="logo" src="./icons/bbloqueletras.png"/></a>
   <button class="abrir" id="abrir"><i class="bi bi-list"></i></button>
+  <button id="theme-btn" class"theme-btn">☼</button>
     <nav class="navheader" id="navheader">
       <button class="cerrar" id="cerrar"><i class="bi bi-x"></i></button>
         <ul class="ulheader">
@@ -11,7 +12,6 @@ const template = () => {
           <li><a href="#null" id="about-link" class="about">Sobre BBloque</a></li>
           <li><a href="#null" id="gallery-link" class="gallery">Trabajos</a></li>
           <li><a href="#null" id="contact-link" class="Contact">Contacto</a></li>
-          <button id="theme-btn">🌕</button>
         </ul>
     </nav>
     `;
@@ -26,6 +26,7 @@ const Header = () => {
   abrir.addEventListener("click", () => {
     navheader.classList.add("visible");
   });
+
   cerrar.addEventListener("click", () => {
     navheader.classList.remove("visible");
   });

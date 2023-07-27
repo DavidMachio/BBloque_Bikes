@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import Trabajos from "./pages/Trabajos/Trabajos";
+import changeTheme from "./utils/theme";
 
 Header();
 Footer();
@@ -31,5 +32,7 @@ document.querySelector("#home-link2").addEventListener("click", () => {
   navheader.classList.remove("visible");
 });
 document.querySelector("#theme-btn").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
+  changeTheme();
+  const navheader = document.querySelector("#navheader");
+  navheader.classList.remove("visible");
 });

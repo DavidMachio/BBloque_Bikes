@@ -3,14 +3,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --primary-light: #101010;
   --bg-light: #dedede;
-  --primary-dark: #dedede;
-  --bg-dark: #000d38;
-  --hover: linear-gradient(
-    0deg,
-    rgba(117, 117, 117, 1) 0%,
-    rgba(255, 255, 255, 1) 100%,
-    rgba(117, 117, 117, 1) 0%
-  );
 }
 
 * {
@@ -21,11 +13,13 @@
 body {
   color: var(--primary-light);
   background-color: var(--bg-light);
+  transition: 0.2s;
 }
 
-.dark {
+body.dark {
   color: var(--bg-light);
   background-color: var(--primary-light);
+  transition: 0.3s;
 }
 li {
   list-style: none;
@@ -49,4 +43,24 @@ footer {
 main {
   margin-top: 10vh;
   margin-bottom: 10vh;
+}
+
+h1,
+h2 {
+  animation: movetext 0.4s, fadeIn 0.2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes movetext {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+  }
 }
