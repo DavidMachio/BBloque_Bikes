@@ -1,1 +1,0 @@
-import "./BikeCard.css";

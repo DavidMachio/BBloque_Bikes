@@ -33,6 +33,4 @@ document.querySelector("#home-link2").addEventListener("click", () => {
 });
 document.querySelector("#theme-btn").addEventListener("click", () => {
   changeTheme();
-  const navheader = document.querySelector("#navheader");
-  navheader.classList.remove("visible");
 });

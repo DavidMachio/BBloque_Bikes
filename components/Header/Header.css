@@ -1,6 +1,5 @@
 header {
   background-color: inherit;
-
   max-height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -15,11 +14,8 @@ header {
   background: none;
   border: none;
   font-size: 20px;
-  padding: 20px;
-  position: absolute;
-  z-index: 10;
-  right: 5px;
-  top: 19px;
+  padding: 30px 55px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +25,7 @@ header {
   font-size: 30px;
 }
 .logo {
-  margin-left: 10px;
+  margin-left: 20px;
   width: 150px;
   height: 25px;
   object-fit: cover;
@@ -92,8 +88,7 @@ header a:hover {
     color: inherit;
     padding: 20px;
     margin-right: 45px;
-    margin-top: 19px;
-    transition: 0.3s;
+    margin-top: 30px;
   }
 
   .abrir:hover {
@@ -107,9 +102,6 @@ header a:hover {
     justify-content: space-between;
   }
 
-  .logo {
-    margin-left: 10px;
-  }
   .navheader {
     width: 50%;
     height: 100vh;
@@ -148,17 +140,18 @@ header a:hover {
   .navheader.visible {
     opacity: 1;
     visibility: visible;
-    animation: fadeIn 0.2s;
-    animation: fadeOut 0.2s;
+    animation: fadeIn 0.2s ease-in-out;
+    animation: fadeOut 0.2s ease-in-out;
   }
   .ulheader {
     width: 100%;
     flex-direction: column;
     align-items: end;
-    z-index: 4;
-    gap: 0px;
+    z-index: 100;
   }
+
   .ulheader a {
+    width: 100%;
     color: inherit;
     padding: 20px;
   }
@@ -169,7 +162,8 @@ header a:hover {
   }
 
   .ulheader a:hover,
-  .ulheader li:hover > button {
+  .ulheader li:hover > button,
+  .ulheader li:hover a {
     color: inherit;
     filter: invert(100%);
     transition: 0.5s;
