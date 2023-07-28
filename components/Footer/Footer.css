@@ -1,6 +1,7 @@
 footer {
   background-color: inherit;
-  height: 10vh;
+  max-height: 10vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

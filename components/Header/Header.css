@@ -1,6 +1,7 @@
 header {
   background-color: inherit;
   max-height: 10vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +15,7 @@ header {
   background: none;
   border: none;
   font-size: 20px;
-  padding: 30px 55px;
+  padding: 0px 0px;
 
   display: flex;
   justify-content: center;
@@ -179,5 +180,10 @@ header a:hover {
   }
   .ulheader :hover {
     text-decoration: none;
+  }
+  #theme-btn {
+    padding: 10px 5px;
+    margin-top: 10px;
+    margin-right: 40px;
   }
 }

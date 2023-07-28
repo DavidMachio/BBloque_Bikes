@@ -5,6 +5,9 @@
   max-width: auto;
   min-height: 80vh;
 }
+p {
+  line-height: 32px;
+}
 
 .textabout {
   justify-content: center;
@@ -32,7 +35,6 @@
     padding: 20;
     justify-content: center;
     flex-direction: column;
-    gap: 0px;
   }
   .coverabout {
     box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.345);
